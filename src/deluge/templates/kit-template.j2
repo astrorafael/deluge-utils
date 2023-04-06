@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Deluge Kit {{ name }}</title>
+    	<meta name="keywords" content="deluge">
+    </head>
+    <body>
+    	<H1>Deluge Kit contents for {{ name }}</H1>
+	    <table border = "1" cellpadding = "5" cellspacing = "5">
+	    <tr>
+	       <th>NAME</th>
+	       <th>SAMPLES FILE</th>
+	    </tr>
+	    {% for instrument in table %}
+	    <tr>
+	       <td>{{ instrument[0] }}</th>
+	       <td>{{ instrument[1] }}</th>
+	    </tr>
+	    {% endfor %}
+	     </table>
+	</body>
+</html>
